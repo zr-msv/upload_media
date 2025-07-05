@@ -1,0 +1,15 @@
+{
+  "name": "zm/laravel-polymorphic-media",
+  "autoload": {
+    "psr-4": {
+      "Zm\\PolymorphicMedia\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zm\\PolymorphicMedia\\PolymorphicMediaServiceProvider"
+      ]
+    }
+  }
+}
