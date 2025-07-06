@@ -25,14 +25,14 @@ class Media extends Model
     protected function url(): Attribute
     {
         return Attribute::make(
-            get: fn($value, $attributes) => asset(Storage::url($attributes['path']))
+            get: fn($value, $attributes) => asset(Storage::url($attributes['file_path']))
         );
     }
 
     protected function extension(): Attribute
     {
         return Attribute::make(
-            get: fn($value, $attributes) => pathinfo($attributes['path'], PATHINFO_EXTENSION)
+            get: fn($value, $attributes) => pathinfo($attributes['file_path'], PATHINFO_EXTENSION)
         );
     }
 }
