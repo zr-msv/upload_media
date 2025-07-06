@@ -52,6 +52,19 @@ $images = $service->getImages($model);
 $service->deleteImage($media);
 
 ````
+
+---
+
+## 🛠 Automatic File Cleanup
+
+This package automatically deletes the physical file from storage when a media record is deleted.
+
+> 🔒 No need to manually remove files — the `MediaObserver` takes care of it for you.
+
+Make sure your files are stored on the disk defined by `Storage::disk('public')`.
+
+
+
 ## 📡 API Endpoints
 ```` 
 Method	         Endpoint	               Description
